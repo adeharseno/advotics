@@ -8,6 +8,7 @@ import "./dashboard.css";
 import Help from "../../assets/images/Help.png";
 import Sales from "../../assets/images/Sales-Turnover.svg";
 import LinkMore from "../../assets/images/more.svg";
+import Product from "../../assets/images/component.png";
 
 const { Paragraph, Title } = Typography;
 const data = [
@@ -122,9 +123,9 @@ function Dashboard() {
           </Row>
           <Row>
             <Col
-              xl={{ span: 14, offset: 1 }}
-              lg={{ span: 14, offset: 1 }}
-              md={{ span: 14, offset: 1 }}
+              xl={{ span: 12, offset: 1 }}
+              lg={{ span: 12, offset: 1 }}
+              md={{ span: 12, offset: 1 }}
               sm={{ span: 22, offset: 1 }}
               xs={{ span: 22, offset: 1 }}
               style={{ display: 'flex' }}
@@ -133,10 +134,176 @@ function Dashboard() {
                   <Title level={4}>AVERAGE PURCHASE VALUE</Title>
                   <Chart
                     chartType="ColumnChart"
-                    width="600px"
+                    width="700px"
                     height="400px"
                     data={data}
                   />
+                  <Link to="" className="card-link">
+                    <img 
+                      src={LinkMore} 
+                      alt="Link More"
+                      style={{ height: "24px" }}
+                      />
+                  </Link>
+                </div>
+            </Col>
+            <Col
+              xl={{ span: 5 }}
+              lg={{ span: 5 }}
+              md={{ span: 5 }}
+              sm={{ span: 22 }}
+              xs={{ span: 22 }}
+              style={{ display: 'flex' }}
+            >
+                <div className="card-large">
+                  <Title level={4}>BEST SELLING SKU</Title>
+                  <div className="card-hightlight">
+                    <Link to="">
+                      <div className="card-hightlight-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-hightlight-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <Link to="" className="card-link">
+                    <img 
+                      src={LinkMore} 
+                      alt="Link More"
+                      style={{ height: "24px" }}
+                      />
+                  </Link>
+                </div>
+            </Col>
+            <Col
+              xl={{ span: 5 }}
+              lg={{ span: 5 }}
+              md={{ span: 5 }}
+              sm={{ span: 22 }}
+              xs={{ span: 22 }}
+              style={{ display: 'flex' }}
+            >
+                <div className="card-large">
+                  <Title level={4}>TOP COMPETITOR SKU</Title>
+                  <div className="card-hightlight">
+                    <Link to="">
+                      <div className="card-hightlight-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-hightlight-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-item">
+                    <Link to="">
+                      <div className="card-item-image">
+                        <img 
+                          src={Product} 
+                          alt="Dummy Product"
+                          style={{ height: "80px", width: "80px" }}
+                          />
+                      </div>
+                      <div className="card-item-content">
+                        <Title level={5}>Product Dummy</Title>
+                        <p>Rp. 999.999</p>
+                        <span>99 Terjual</span>
+                      </div>
+                    </Link>
+                  </div>
                   <Link to="" className="card-link">
                     <img 
                       src={LinkMore} 
