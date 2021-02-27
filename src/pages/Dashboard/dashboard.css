@@ -10,6 +10,7 @@
     opacity: 1;
     padding: 14px;
     color: white;
+    margin-bottom: 24px;
 }
 .card-insight h5.ant-typography {
     color: white !important; 
@@ -26,4 +27,50 @@
     position: relative;
     top: -2px;
     margin-right: 6px;
+}
+.card-small {
+    background: white;
+    border: 0.5px solid #CDCDCD;
+    border-radius: 2px;
+    box-shadow: 0px 2px 6px #0000000A;
+    padding: 12px 18px;
+    margin-bottom: 24px;
+    position: relative;
+}
+.card-small-image {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    margin: 0 20px;
+}
+.card-small-content {
+    display: inline-block;
+}
+.card-small p {
+    margin-bottom: 6px;
+}
+.card-small h2.ant-typography {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.card-small span {
+    font-size: 12px;
+}
+.card-small span label {
+    color: red;
+    font-weight: bold;   
+}
+.card-link {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+.card-large {
+    background: white;
+    border: 0.5px solid #CDCDCD;
+    border-radius: 2px;
+    box-shadow: 0px 2px 6px #0000000A;
+    padding: 12px 18px;
+    margin-bottom: 24px;
+    position: relative;
 }

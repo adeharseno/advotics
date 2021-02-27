@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import "./dashboard.css";
 import Help from "../../assets/images/Help.png";
+import Sales from "../../assets/images/Sales-Turnover.svg";
+import LinkMore from "../../assets/images/more.svg";
 
 const { Paragraph, Title } = Typography;
 
@@ -73,6 +75,52 @@ function Dashboard() {
                   </Link>
                 </Col>
               </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col
+              xl={{ span: 21, offset: 1 }}
+              lg={{ span: 21, offset: 1 }}
+              md={{ span: 21, offset: 1 }}
+              sm={{ span: 22, offset: 1 }}
+              xs={{ span: 22, offset: 1 }}
+              style={{ display: 'flex' }}
+            >
+                <div className="card-small">
+                  <div className="card-small-content">
+                    <p>Sales Turnover</p>
+                    <Title level={2}>Rp 3,600,000</Title>
+                    <span><label>13.8%</label> last period in product sold</span>
+                  </div>
+                  <div className="card-small-image">
+                    <img 
+                      src={Sales} 
+                      alt="Sales Turnover"
+                      style={{ height: "60px" }}
+                      />
+                  </div>
+                  <Link to="" className="card-link">
+                    <img 
+                      src={LinkMore} 
+                      alt="Link More"
+                      style={{ height: "24px" }}
+                      />
+                  </Link>
+                </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col
+              xl={{ span: 14, offset: 1 }}
+              lg={{ span: 14, offset: 1 }}
+              md={{ span: 14, offset: 1 }}
+              sm={{ span: 22, offset: 1 }}
+              xs={{ span: 22, offset: 1 }}
+              style={{ display: 'flex' }}
+            >
+                <div className="card-large">
+                  <Title level={4}>AVERAGE PURCHASE VALUE</Title>
+                </div>
             </Col>
           </Row>
         </Col>
