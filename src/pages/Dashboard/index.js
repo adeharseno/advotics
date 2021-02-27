@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row, Typography } from "antd";
 import Sidebar from "../../components/Atoms/Sidebar"
 import { Link } from 'react-router-dom';
+import Chart from "react-google-charts";
 
 import "./dashboard.css";
 import Help from "../../assets/images/Help.png";
@@ -9,6 +10,16 @@ import Sales from "../../assets/images/Sales-Turnover.svg";
 import LinkMore from "../../assets/images/more.svg";
 
 const { Paragraph, Title } = Typography;
+const data = [
+  ["Element", "Nett", { role: "style" }],
+  ["Jan 12", 8.94, "#37B04C"],
+  ["Tue", 10.49, "#37B04C"],
+  ["Wed", 19.3, "#37B04C"],
+  ["Thu", 21.45, "#37B04C"],
+  ["Fri", 8.94, "#37B04C"],
+  ["Sat", 10.49, "#37B04C"],
+  ["Sun", 19.3, "#37B04C"]
+];
 
 function Dashboard() {
 
@@ -120,6 +131,19 @@ function Dashboard() {
             >
                 <div className="card-large">
                   <Title level={4}>AVERAGE PURCHASE VALUE</Title>
+                  <Chart
+                    chartType="ColumnChart"
+                    width="600px"
+                    height="400px"
+                    data={data}
+                  />
+                  <Link to="" className="card-link">
+                    <img 
+                      src={LinkMore} 
+                      alt="Link More"
+                      style={{ height: "24px" }}
+                      />
+                  </Link>
                 </div>
             </Col>
           </Row>
