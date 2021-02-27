@@ -1,0 +1,29 @@
+.main-section {
+    margin-top: 24px;
+}
+.title-primary {
+    color: #707070C4 !important;
+}
+.card-insight {
+    background: #37B04C 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 14px;
+    color: white;
+}
+.card-insight h5.ant-typography {
+    color: white !important; 
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.card-insight .ant-typography {
+    display: inline-block;
+    color: white !important;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.card-insight img {
+    position: relative;
+    top: -2px;
+    margin-right: 6px;
+}

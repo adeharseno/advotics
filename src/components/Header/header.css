@@ -1,0 +1,48 @@
+.header {
+    height: 64px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    line-height: 64px;
+    padding: 0 18px;
+    position: fixed;
+    z-index: 2;
+}
+.header img {
+    display: inline-block;
+    position: relative;
+}
+.header p {
+    display: inline-block;
+    margin: 0 8px;
+    color: #5B5B5B;
+    font-size: 11px;
+    top: 10px;
+    position: relative;
+}
+.profile {
+    display: inline-block;
+    margin-right: 14px;
+}
+.profile img, .profile-desc {
+    display: inline-block;
+}
+.profile-desc {
+    display: inline-block;
+    margin-right: 14px;
+    position: relative;
+    top: 8px;
+}
+.profile-desc label {
+    font-size: 18px;
+    display: block;
+    line-height: normal;
+    color: #727272;
+}
+.profile-desc span {
+    font-size: 12px;
+    display: block;
+    line-height: normal;
+    color: #727272;
+}

@@ -1,0 +1,33 @@
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    top: 64px;
+    z-index: 1;
+    width: 72px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #D2D2D2;
+}
+.sidebar ul {
+    padding: 0;
+    margin: 24px 0;
+}
+.sidebar ul li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0;
+}
+.sidebar ul li.active {
+    background: #C5C5C5 0% 0% no-repeat padding-box;
+}
+.sidebar ul li.active a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+}
+.sidebar ul li.active a img {
+    position: relative;
+    top: 2px;
+}
